@@ -1,0 +1,14 @@
+{
+  "name": "desktop-uuid",
+  "version": "0.0.1",
+  "description": "Get the device UUID for windows,linux, or mac with no third-party dependencies",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Chris Hogan",
+    "email": "chris@hogan.io"
+  },
+  "license": "MIT"
+}
