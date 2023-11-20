@@ -4,12 +4,17 @@ Various tools to get different identifiers from a system.
 
 You can't get a true unique identifier if each OS/Vendor creates unique id's independent of one another, but here are a collection of tools you can use, baked into each OS, that will hardware identifiers that will only change with major system changes or hardware changes.
 
+## Install
+```
+npm i --save git@github.com:WanderingHogan/device-unique-identifiers.git
+```
+
 ### get_platform
 Gets the platform as a string.
 Options: win32, linux, darwin, unknown
 example
 ```
-let device_identifiers = require('desktop-uuid')
+let device_identifiers = require('device-unique-identifiers')
 
 console.log(device_identifiers.get_platform())
 //darwin
@@ -23,7 +28,7 @@ Windows uses UUID from [Win32_ComputerSystemProduct](https://learn.microsoft.com
 
 example
 ```
-let device_identifiers = require('desktop-uuid')
+let device_identifiers = require('device-unique-identifiers')
 
 console.log(device_identifiers.getUUID()) 
 //1234A123-1234-1A12-A123-AB1234ABC1AB
@@ -43,7 +48,7 @@ Windows - Returns Local Area Address (or the first insance if there are multiple
 
 example
 ```
-let device_identifiers = require('desktop-uuid')
+let device_identifiers = require('device-unique-identifiers')
 
 console.log(device_identifiers.get_ethernet_mac()) 
 //1a:a1:1a:1a:11:1a
@@ -59,7 +64,7 @@ Windows - TODO
 
 example
 ```
-let device_identifiers = require('desktop-uuid')
+let device_identifiers = require('device-unique-identifiers')
 
 console.log(device_identifiers.get_all_interface_names()) 
 //lo0,gif0,stf0,anpi0,anpi2,anpi1,en4,en5,en6,en1,en2,en3,bridge0,ap1,en0,awdl0,llw0,utun0,utun1,utun2,utun3
@@ -77,7 +82,7 @@ Windows - TODO:
 
 example
 ```
-let device_identifiers = require('desktop-uuid')
+let device_identifiers = require('device-unique-identifiers')
 
 console.log(device_identifiers.get_ethernet_mac()) 
 //01A01234-01A0-0A1A-0AB0-0123A01A012A
